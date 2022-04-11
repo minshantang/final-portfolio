@@ -1,0 +1,425 @@
+/*Add padding and margin to space out the page.
+Make the font larger too.*/
+body {
+	margin: 1%;
+	padding: 1%;
+	font-size: 100%;
+}
+
+header {
+    text-align: center;
+}
+
+a.skip {
+    color: transparent;
+}
+
+a.skip:focus {
+    color: blue;
+    background: white;
+    -webkit-transition: top 1s ease-out;
+    transition: left 1s ease-out;
+    z-index: 1;
+    position: absolute;
+}
+
+.logo {
+    grid-row: 1 / span 1
+}
+
+/*Make the h1 heading bigger with a bold font*/
+.head-title {
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    padding-top: 30px;
+    grid-row: 2 / span 1;
+}
+
+.head-title-2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    grid-row: 3 / span 1;
+}
+
+header img {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+}
+
+.intro {
+    background: url("../images/mu-background.jpeg") rgb(205, 0, 0);
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+h1 {
+	font-size: 2em; 
+	font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/*Make the h2 heading*/
+h2 {
+	font-size: 1.3em; 
+	font-weight: bold;
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    font-family: "Open Sans", sans-serif;
+}
+
+/*Style the images*/
+img {
+    height: 200px;
+    width: 200px;
+    border: 3px solid transparent;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;    
+    border-radius: 20px;
+    margin: 10px;
+}
+
+img .flex-img {
+    display: flex;
+    margin: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.settohover:hover {
+    opacity: 0.3;
+}
+
+/* Add borders around the main components and some
+space too*/
+header, nav, main, h1, footer {
+	border: 2px solid transparent;
+	margin: 10px 0;
+}
+
+/* Change the styling for all of the list 
+items in the nav section */
+nav {
+   padding: 20px 10px;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+nav li {
+	background-color: rgb(205, 0, 0);
+	padding: 10px 5px;
+	width: 100%;
+	border: 1px solid transparent;
+	display: table-cell;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    grid-column: 2 / span 1
+}
+
+/* Change the styling for all titles of
+the list items in the nav section */
+nav .active a {
+    color: yellow;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+}
+
+/* Change to paragraphs */
+main p {
+    margin-top: 50px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    padding: 10px 15px;
+    background: yellow;
+    border: 2px solid black;
+}
+
+@keyframes animate {
+    from {
+        width: 25px;
+        opacity: 0;
+    } to {
+        width: 200px;
+        opacity: 1;
+    }
+}
+
+#img-form {
+    background: transparent;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation: animate 2.5s;
+}
+
+form legend {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+}
+
+form label {
+    font-size: 13px;
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    display: block;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #a0a0a0;
+    height: 27px;
+    line-height: 27px;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.form-name,
+.form-phone,
+.form-email,
+.form-message,
+.form-checkbox {
+    background: none;
+    border: none;
+    text-align: center;
+}
+
+.form-checkbox label {
+    padding: 0;
+    font-size: 16px;
+    display: inline-block;
+}
+
+form button {
+    background-color: rgb(205, 0, 0);
+    border: 2px solid #fff;
+    border-radius: 250px;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 20px auto;
+    height: 40px;
+    width: 25%;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* Changes to footer */
+footer {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+}
+
+/* No changes to link */
+/* Source: https://www.w3schools.com/css/css_link.asp */
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+/* Flip card */
+.flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card:focus-within .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front button {
+    background: none;
+    border: none;
+}
+
+.flip-card-back {
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+@media screen and (min-width: 950px) {
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        justify-content: center;
+    }
+
+    nav li {
+        background-color: rgb(205, 0, 0);
+        padding: 10px 5px;
+        width: 100%;
+        border: 1px solid transparent;
+        display: table-cell;
+        text-align: center;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    nav .index {
+        grid-column: 1 / span 1;
+    }
+
+    nav .goalkeepers {
+        grid-column: 2 / span 1;
+    }
+
+    nav .defenders {
+        grid-column: 3 / span 1
+    }
+
+    nav .midfielders {
+        grid-column: 4 / span 1;
+    }
+
+    nav .forwards {
+        grid-column: 5 / span 1;
+    }
+
+    nav .academy {
+        grid-column: 6 / span 1;
+    }
+
+    nav .contact {
+        grid-column: 7 / span 1;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    nav ul {
+        display: grid;
+        grid-template-columns: 1.8fr 0.2fr 1.8fr 0.2fr 1.8fr 0.2fr 1.8fr 0.2fr 1.8fr 0.2fr 1.8fr 0.2fr 1.8fr;
+        justify-content: center;
+    }
+    
+    nav li {
+        background-color: rgb(205, 0, 0);
+        padding: 10px 5px;
+        width: 100%;
+        border: 1px solid transparent;
+        display: table-cell;
+        text-align: center;
+        font-family: "Open Sans", sans-serif;
+    }
+    
+    nav .index {
+        grid-column: 1 / span 1;
+    }
+    
+    nav .goalkeepers {
+        grid-column: 3 / span 1;
+    }
+    
+    nav .defenders {
+        grid-column: 5 / span 1
+    }
+    
+    nav .midfielders {
+        grid-column: 7 / span 1;
+    }
+    
+    nav .forwards {
+        grid-column: 9 / span 1;
+    }
+    
+    nav .academy {
+        grid-column: 11 / span 1;
+    }
+    
+    nav .contact {
+        grid-column: 13 / span 1;
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    /* Turn off animation */
+    #img-form {
+      animation: none;
+    }
+
+    /* Turn off flip card */
+    .flip-card-inner {
+        transition: initial;
+        transform: initial;
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: initial;
+    }
+
+    .flip-card:focus .flip-card-inner {
+        transform: initial;
+    }
+
+    /* Turn off scrolling effects on parallax */
+    .intro {
+        background-attachment: scroll;
+    }
+}
