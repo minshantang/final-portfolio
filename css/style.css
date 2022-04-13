@@ -142,6 +142,7 @@ nav li {
 the list items in the nav section */
 nav .active a {
     color: yellow;
+    text-decoration: underline wavy;
 }
 
 nav a {
