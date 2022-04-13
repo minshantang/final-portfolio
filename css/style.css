@@ -64,7 +64,7 @@ header img {
 }
 
 .intro {
-    background: url("../images/mu-background-modified.jpeg"), black;
+    background: url("../images/mu-background.jpeg"), black;
     text-align: center;
     min-height: 400px;
     background-attachment: fixed;
